@@ -47,6 +47,8 @@ function ServiceView({ currentService, isLoggedIn, services }) {
               </div>
             </div>
           );
+        case 'txt_deal_img':
+          return <ImageProcessor />;
         default:
           return (
             <div>
