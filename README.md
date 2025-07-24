@@ -1,6 +1,6 @@
 ##  姐控SaaS
 
-
+![new](static/common/imgs/index.png)
 
 ## install
 
