@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewSaaS-一站式服务平台</title>
+    <meta name="description" content="姐控拯救世界的SaaS平台，提供全方位的企业级服务解决方案。">
+    <meta name="keywords" content="SaaS, 企业服务, 一站式平台, 管理工具">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="姐控拯救世界的SaaS - 一站式企业服务平台">
+    <meta property="og:description" content="姐控拯救世界的SaaS平台，提供全方位的企业级服务解决方案。">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="姐控拯救世界的SaaS - 一站式企业服务平台">
+    <meta name="twitter:description" content="姐控拯救世界的SaaS平台，提供全方位的企业级服务解决方案。">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #3b82f6;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #f8fafc;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] hover:bg-[var(--primary-dark)] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply border-2 border-[var(--primary-color)] text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+        }
+        
+        .service-card {
+            @apply bg-white rounded-xl p-6 border border-[var(--border-color)] hover:shadow-lg transition-shadow duration-300;
+        }
+        
+        .section-padding {
+            @apply py-16 px-4 sm:px-6 lg:px-8;
+        }
+    }
+    </style>
+
+    <div id="root"></div>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/LoginModal.js"></script>
+    <script type="text/babel" src="components/ServiceView.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</head>
+<body>
+</body>
+</html>
