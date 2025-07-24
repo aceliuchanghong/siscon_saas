@@ -1,14 +1,5 @@
-function Sidebar({ currentService, setCurrentService }) {
+function Sidebar({ currentService, setCurrentService, services }) {
   try {
-    const services = [
-      { id: 'dashboard', name: '总览', icon: 'layout-dashboard' },
-      { id: 'crm', name: '客户管理', icon: 'users' },
-      { id: 'analytics', name: '数据分析', icon: 'chart-bar' },
-      { id: 'storage', name: '云存储', icon: 'cloud' },
-      { id: 'email', name: '邮件营销', icon: 'mail' },
-      { id: 'project', name: '项目管理', icon: 'calendar' },
-      { id: 'finance', name: '财务工具', icon: 'dollar-sign' }
-    ];
 
     return (
       <div className="w-64 bg-white border-r border-[var(--border-color)] flex flex-col" data-name="sidebar" data-file="components/Sidebar.js">
@@ -45,7 +36,7 @@ function Sidebar({ currentService, setCurrentService }) {
 
         <div className="p-4 border-t border-[var(--border-color)]">
           <div className="text-xs text-[var(--text-secondary)] text-center">
-            © 2024 姐控拯救世界的SaaS
+            © 2025 姐控拯救世界的SaaS
           </div>
         </div>
       </div>
